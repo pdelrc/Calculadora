@@ -10,7 +10,7 @@ body {
   align-content: center;
   min-height: 100vh;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
 }
 
 .calculadora-grilla > button {
@@ -33,7 +33,7 @@ body {
   word-break: break-all;
 }
 
-output .display {
+.output .display {
   color: black;
   font-size: 1.85rem;
   text-align: right;

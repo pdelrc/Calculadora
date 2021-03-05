@@ -14,17 +14,17 @@ botonNumeros.forEach(function(boton) {
 });
 
 botonOpera.forEach(function(boton){
-    boton.addEventListener("click", function(){
+    boton.addEventListener("click", function() {
         selectOperacion(boton.innerText);
     })
 });
 
-botonIgual.addEventListener("click", function(){
+botonIgual.addEventListener("click", function() {
     calcular();
     actualizarDisplay();
 });
 
-botonDelete.addEventListener("click", function(){
+botonDelete.addEventListener("click", function() {
     clear();
     actualizarDisplay();
 });
@@ -51,7 +51,7 @@ function calcular() {
         case "-":
             calculo = actual - anterior;
             break;
-        case "*":
+        case "x":
             calculo = actual * anterior;
             break;
         case "/":
@@ -78,4 +78,3 @@ function actualizarDisplay() {
     result.value = opeActual;
 }
 
-clear();
